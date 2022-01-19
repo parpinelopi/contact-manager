@@ -6,153 +6,56 @@
     <meta name="description" content="contact manager tool">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Pinelopi">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="style_grid.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+
+
 </head>
 
 <body>
-    <div class="container-thumb">
 
-        <div class="title">
-            <header>Meet the Team</header>
-        </div>
-        <div class="search-bar">
-            <button type="button" class ="search-bar">
-                <img src="src/img/search_icon.jpg" alt="search_bar">
-            </button>
-            <input type="text" placeholder="">
-        </div>
-        <div class="sort">
-            <button type="button" class ="sort-button">
-            <img src="src/img/sorting_icon.jpg" alt="sorting_icon">
-            </button>
-        </div>
-        <div class="view">
-            <button type="button" class ="grid-view-button">
-                <img src="src/img/grid_view_icon.jpg" alt="grid_view_icon">
-            </button>
-            <button type="button" class ="list-view-button">
-                <img src="src/img/list_view_icon.jpg" alt="list_view_icon">
-            </button>
-        </div>
 
-        <div class="grid-container-thumb">
-            <div class="grid-item-thumb-top-left-one">
-                <h1 class="person_name">
-                    Steven Brooks
-                </h1>
-                <img class="img-person" src="src/img/pic_1.jpg" alt="person_1">
-                <h1 class="country">
-                    New York
-                </h1>
-                <div class="contact">
-                    <button type="button" class="email-button">
-                        <img src="src/img/email.jpg" alt="email">
-                    </button>
-                    <button type="button" class="phone-button">
-                        <img src="src/img/phone_nr.jpg" alt="phone">
-                    </button>
-                </div>
-            </div>
 
-            <div class="grid-item-thumb-top-left-two">
-                <h1 class="person_name">
-                    Philip Hunt
-                </h1>
-                <img class="img-person" src="src/img/pic_2.jpg" alt="person_2">
-                <h1 class="country">
-                    Tokyo
-                </h1>
-                <div class="contact">
-                    <button type="button" class="email-button">
-                        <img src="src/img/email.jpg" alt="email">
-                    </button>
-                    <button type="button" class="phone-button">
-                        <img src="src/img/phone_nr.jpg" alt="phone">
-                    </button>
-                </div>
-            </div>
-
-            <div class="grid-item-thumb-top-left-three">
-                <h1 class="person_name">
-                    Amanda Taylor
-                </h1>
-                <img class="img-person" src="src/img/pic_3.jpg" alt="person_3">
-                <h1 class="country">
-                    Lisbon
-                </h1>
-                <div class="contact">
-                    <button type="button" class="email-button">
-                        <img src="src/img/email.jpg" alt="email">
-                    </button>
-
-                    <button type="button" class="phone-button">
-                        <img src="src/img/phone_nr.jpg" alt="phone">
-                    </button>
-                </div>
-            </div>
-
-            <div class="grid-item-thumb-bottom-left-one">
-                <h1 class="person_name">
-                    Rachel Adams
-                </h1>
-                <img class="img-person" src="src/img/pic_4.jpg" alt="person_4">
-                <h1 class="country">
-                    Stockholm
-                </h1>
-                <div class="contact">
-                    <button type="button" class="email-button">
-                        <img src="src/img/email.jpg" alt="email">
-                    </button>
-
-                    <button type="button" class="phone-button">
-                        <img src="src/img/phone_nr.jpg" alt="phone">
-                    </button>
-                </div>
-            </div>
-
-            <div class="grid-item-thumb-bottom-left-two">
-                <h1 class="person_name">
-                    Daniel Ross
-                </h1>
-                <img class="img-person" src="src/img/pic_5.jpg" alt="person_5">
-
-                <h1 class="country">
-                    London
-                </h1>
-                <div class="contact">
-                    <button type="button" class="email-button">
-                        <img src="src/img/email.jpg" alt="email">
-                    </button>
-
-                    <button type="button" class="phone-button">
-                        <img src="src/img/phone_nr.jpg" alt="phone">
-                    </button>
-                </div>
-            </div>
-
-            <div class="grid-item-thumb-bottom-left-three">
-                <h1 class="person_name">
-                    Sarah Foster
-                </h1>
-                <img class="img-person" src="src/img/pic_6.jpg" alt="person_6">
-                <h1 class="country">
-                    São Paulo
-                </h1>
-                <div class="contact">
-                    <button type="button" class="email-button">
-                        <img src="src/img/email.jpg" alt="email">
-                    </button>
-
-                    <button type="button" class="phone-button">
-                        <img src="src/img/phone_nr.jpg" alt="phone">
-                    </button>
-                </div>
-            </div>
-
-        </div>
+    <div class="title">
+        <header>Meet the Team</header>
     </div>
 
+    <div class="elements-bar">
 
+       
+            <input type="search" class="input-search" placeholder="">
+            <i aria-hidden="true" class="fas fa-search" width="20" height="20"></i>
+            
+        
+        <button type="button" class="sort-button-ascending" onclick="sortAsc()" aria-label="sort-button-asc" role="button">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <button type="button" class="sort-button-descending" onclick="sortDesc()" aria-label="sort-button-desc" role="button">
+            <i class="fas fa-arrow-down"></i>
+        </button>
+
+        <div class="view">
+            <button type="button" class="grid-view-button" role="button">
+                <i class="fas fa-th-large"></i>
+            </button>
+            <button type="button" class="list-view-button" role="button">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+    </div>
+
+    <div class="grid-container" aria-sort="none">
+
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
