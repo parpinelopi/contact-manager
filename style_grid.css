@@ -9,14 +9,6 @@ div {
   margin: auto;
 }
 
-.action-bar {
-  position: absolute;
-  width: 733px;
-  height: 24px;
-  left: 344px;
-  top: 179px;
-}
-
 .title {
   position: absolute;
   width: 348px;
@@ -47,10 +39,11 @@ div {
   position: absolute;
   width: 31.09px;
   height: 23px;
-  left: 344px;
-  top: 183px;
+  left: 235px;
+  top: 179px;
+  margin:0px;
 
-  background: yellow;
+  background: transparent;
   border: none;
 }
 
@@ -58,23 +51,25 @@ div {
   position: absolute;
   width: 31.09px;
   height: 23px;
-  left: 358.52;
+  left: 270px;
   top: 179px;
 
-  background: yellow;
+  margin:0px;
+
+  background: transparent;
   border: none;
 }
 
 .sort {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  display: inline;
 
-  width: 31.09px;
+  position: absolute;
+
+  width: 35;
   height: 23px;
-  left: 344px;
-  top: 179px;
+  left: 70px;
+  top: px;
+  background-color: yellow;
 }
 
 .fa-arrow-down {
@@ -102,12 +97,6 @@ div {
 .fa-bars {
   background-color: #ebe9e4;
 }
-
-
-
-
-
-
 
 .input-search {
   position: absolute;
@@ -163,76 +152,21 @@ div {
   z-index: 2;
 }
 
-.overlay-container-top-left-two {
+.grid-view-button .fa-th-large {
   position: absolute;
-  width: 210px;
-  height: 164px;
-  left: 0px;
-  top: 180px;
-
-  background: #ffffff;
-  border-radius: 42px 0px 20px 20px;
-  z-index: 2;
-}
-
-.overlay-container-top-left-three {
-  position: absolute;
-  width: 210px;
-  height: 164px;
-  left: 0px;
-  top: 180px;
-
-  background: #ffffff;
-  border-radius: 42px 0px 20px 20px;
-  z-index: 2;
-}
-
-.overlay-container-bottom-left-one {
-  position: absolute;
-  width: 210px;
-  height: 164px;
-  left: 0px;
-  top: 180px;
-
-  background: #ffffff;
-  border-radius: 42px 0px 20px 20px;
-  z-index: 2;
-}
-
-.overlay-container-bottom-left-two {
-  position: absolute;
-  width: 210px;
-  height: 164px;
-  left: 0px;
-  top: 180px;
-
-  background: #ffffff;
-  border-radius: 42px 0px 20px 20px;
-  z-index: 2;
-}
-
-.overlay-container-bottom-left-three {
-  position: absolute;
-  width: 210px;
-  height: 164px;
-  left: 0px;
-  top: 180px;
-
-  background: #ffffff;
-  border-radius: 42px 0px 20px 20px;
-  z-index: 2;
-}
-
-.grid-view-button {
-  position: absolute;
+  display: block;
   width: 24px;
   height: 23px;
   left: 1053px;
   top: 180px;
+  border: none;
+
+  background-color: #ebe9e4;
 }
 
-.list-view-button {
+.list-view-button .fa-bars {
   position: absolute;
+  display:block;
   width: 24px;
   height: 23px;
   left: 1053px;
@@ -253,7 +187,7 @@ div {
 
   background-color: transparent;
 
-  left: 350px;
+  left: 420px;
   top: 220px;
   width: auto;
   height: auto;
@@ -277,10 +211,11 @@ div {
 }
 
 .elements-bar {
-  width: 733px;
+  position: absolute;
+  width: 180px;
   height: 24px;
-  left: 344px;
-  top: 179px;
+  left: 70px;
+  top: 40px;
 }
 
 .grid-item {
@@ -427,6 +362,3 @@ div {
   height: 19px;
 }
 
-.phone-icon {
-  background: url(phone_nr.jpeg);
-}
