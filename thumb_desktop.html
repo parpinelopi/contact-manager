@@ -28,18 +28,21 @@
 
     <div class="elements-bar">
 
-       
-            <input type="search" class="input-search" placeholder="">
-            <i aria-hidden="true" class="fas fa-search" width="20" height="20"></i>
-            
-        
-        <button type="button" class="sort-button-ascending" onclick="sortAsc()" aria-label="sort-button-asc" role="button">
-            <i class="fas fa-arrow-up"></i>
-        </button>
 
-        <button type="button" class="sort-button-descending" onclick="sortDesc()" aria-label="sort-button-desc" role="button">
-            <i class="fas fa-arrow-down"></i>
-        </button>
+        <input type="search" class="input-search" placeholder="">
+        <i class="fas fa-search" aria-hidden="true" width="20" height="20"></i>
+
+        <div class="sort">
+            <button type="button" class="sort-button-ascending" onclick="sortAsc()" aria-label="sort-button-asc"
+                role="button">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+
+            <button type="button" class="sort-button-descending" onclick="sortDesc()" aria-label="sort-button-desc"
+                role="button">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+        </div>
 
         <div class="view">
             <button type="button" class="grid-view-button" role="button">
